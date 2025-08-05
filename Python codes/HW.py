@@ -26,21 +26,43 @@
 # 151-300. 15/=
 #300 + 15/= + 3%
 
-units = int(input("Please enter the number of units used"))
+# units = int(input("Please enter the number of units used"))
 
-while units<0:
-    units = int(input("Please enter a valid number"))
+# while units<0:
+#     units = int(input("Please enter a valid number"))
 
-if units<91:
-    cost=units*7
-elif units<151:
-    cost=630 + (units-90)*10
-elif units<301:
-    cost=1230 + (units-150)*15
-elif units>300:
-    cost=(3480 +(units-300)*15)*103/100
+# if units<91:
+#     cost=units*7
+# elif units<151:
+#     cost=630 + (units-90)*10
+# elif units<301:
+#     cost=1230 + (units-150)*15
+# elif units>300:
+#     cost=(3480 +(units-300)*15)*103/100
 
-print(cost, "/=")
+# print(cost, "/=")
 
 
 #_______________________________________________________________
+
+
+# 0 -1000 l  500/=
+#1001 - 3000l  per l -3/=
+#3001 - 10000l per l -5/=
+# 10001 l - per l 10/=
+#0777861677
+
+
+water = int(input("Please enter litres used"))
+
+while water<0:
+    water =int(input("Please enter valid number"))
+if water <1001:
+    cost = 500
+elif water < 3001:
+    cost = 500 + (water-1000)*3
+elif water < 10001:
+    cost = 6500 + (water-3000)*5
+elif water >10000:
+    cost = 41500 + (water-10000)*10
+print(cost)
