@@ -62,7 +62,9 @@ if water <1001:
 elif water < 3001:
     cost = 500 + (water-1000)*3
 elif water < 10001:
-    cost = 6500 + (water-3000)*5
+    cost = 500 +2000*3 + (water-3000)*5
 elif water >10000:
-    cost = 41500 + (water-10000)*10
-print(cost)
+    cost = 500 + 2000*3 + 7000*5 + (water-10000)*10
+
+print(water,"litres")
+print(cost,"/=")
