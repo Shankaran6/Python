@@ -10,11 +10,11 @@ while c < n:
         name = str(input("Please enter the name of member"))
         names.append(name)
         c+=1
-        print(len(names),"is your number")
+        print(len(names),"is your code number")
         password= str(input("Please enter password"))
         passwords.append(password)
     elif func =="L":
-        num=int(input("please enter your number"))
+        num=int(input("please enter your code number"))
         print(f"Good morning {names[num-1]}.")
         pas = str(input("please enter your password:"))
         while attempt<5:
