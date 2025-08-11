@@ -61,6 +61,7 @@ print("\n_"+"_"*20)
 #______________________
 #1,*,3,*,5,*,7
 # x=0
+x=1
 while x<10:
     
     if x%2!=0:
@@ -79,7 +80,7 @@ print("\n_"+"_"*20)
 
 x=1
 while x<5:
-    print(x,"*"*x,end='')
+    print(x,"*"*x,"\n",end='')
     x+=1
 print("\n_"+"_"*20)
 
@@ -96,7 +97,7 @@ while x < 5:
     while y <6:
         print(y,end='')
         y+=1
-    print("\n")
+    print("")
     x+=1
 
 print("\n_"+"_"*20)
@@ -110,7 +111,7 @@ while x < 5:
     while y >0:
         print(y,end='')
         y-=1
-    print("\n")
+    print("")
     x+=1
     
 print("\n_"+"_"*20)
@@ -123,7 +124,7 @@ print("\n_"+"_"*20)
 
 x=1
 while x<5:
-    print(x*5)
+    print(f"{x}"*5)
     x+=1
 print("\n_"+"_"*20)
 
