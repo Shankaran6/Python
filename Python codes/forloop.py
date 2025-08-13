@@ -73,7 +73,3 @@ for i in range (5):
     print("")
 
 print("\n")
-
-for i in range (5):
-    print(f"{i}"*i)
-    print("")
