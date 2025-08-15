@@ -13,21 +13,21 @@ while c < n:
 
         while not (firstName.isalpha()):
             print("invalid name")
-            firstName=input("Please enter a valid name:")
-            names.append(firstName)
-
+            firstName=str(input("Please enter a valid name:"))
+            
+        names.append(firstName)
         lastName = input("Please enter a your last name:")
 
         while not (lastName.isalpha()):
             print("invalid name")
-            lastName=input("Please enter a valid name:")
-            lastnames.append(lastName)
+            lastName=str(input("Please enter a valid name:"))
+        lastnames.append(lastName)    
 
         ID = input("Please enter your IC number:")
 
         while not ( ID.isdigit()) and len(ID)==12:
             print("Invalid ID")
-            ID = input("Please enter your ID")
+            ID =str(input("Please enter your ID"))
             IDS.append(ID)
 
         import math
@@ -86,9 +86,10 @@ while c < n:
     if func =="L":
         num=int(input("Please enter the valid number"))
         
-        print(names)
-        print(lastnames)
-        print(numbers)
+        print(names[num-1])
+        print(lastnames[num-1])
+        print(numbers[num-1])
+        
     
 
 

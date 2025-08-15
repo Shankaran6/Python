@@ -20,10 +20,13 @@ while c < n:
         while attempt<5:
             if pas == passwords[num-1]:
                 print("logged in")
+                break
                 attempt=0
             else:
                 print("Incorrect password")
+                continue
                 attempt+=1
+
 
 
 
