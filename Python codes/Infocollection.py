@@ -82,7 +82,10 @@ while c < n:
 
         number =("{0}/ {1}/ {2}".format(year,month,date))
         numbers.append(number)
+
         c+=1
+
+        
     if func =="L":
         num=int(input("Please enter the valid number"))
         
