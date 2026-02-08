@@ -30,16 +30,28 @@ if ask in table[1]:
     number1.remove(enter)
     selector()
 
+print(table)
 
 ask=int(input("Please enter the position of X:"))
 if ask in table[1]:  
     enter=table[1].index(ask)  
     table[1][enter]="X"
     number1.remove(enter)
-for k in range (0,3):
-    if table[1][k]=="X" and table[1][k+1]=="X":
-        table[2][k+1]=="O"
 
+    for k in range (0,3):
+        if table[1][k]=="X" and table[1][k+1]=="X":
+            table[2][k+1]=="O"
+        else:
+            n=random.choice(number2)
+            table[2][n]=="O"
+
+print(table)
+
+ask=int(input("Please enter the position of X:"))
+if ask in table[2]:  
+    enter=table[2].index(ask)  
+    table[2][enter]="X"
+    number2.remove(enter)
 
 print(table)
     

@@ -18,22 +18,30 @@
 
 
 
-n=int(input("Please enter the integer n"))
+# n=int(input("Please enter the integer n"))
 
-while n<=0:
-    n=int(input("Please enter proper value for the integer n"))
-sum_of_square=0
-for i in range (1,n+1):
-    sum_of_square+=i**2
+# while n<=0:
+#     n=int(input("Please enter proper value for the integer n"))
+# sum_of_square=0
+# for i in range (1,n+1):
+#     sum_of_square+=i**2
 
-total=0
-for i in range (1,n+1):
-    total+=i
+# total=0
+# for i in range (1,n+1):
+#     total+=i
 
-square_of_sum=total**2
+# square_of_sum=total**2
 
-difference=(square_of_sum-sum_of_square)
+# difference=(square_of_sum-sum_of_square)
 
-print(difference)
+# print(difference)
+
+
+
+
+
+            
+
+
 
 
