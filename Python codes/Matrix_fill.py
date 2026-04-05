@@ -2,8 +2,9 @@ S=str(input())
 N=int(input())
 i=0
 Matrix=[[] for _ in range(N)]
-
-
+def printing_in_matrix_form(Matrix):
+    for row in Matrix:
+        print(*row)
 while i < N:
     for letter in S:
         Matrix[i].append(letter)
@@ -16,7 +17,10 @@ while i < N:
             i+=1
             if i == N:
                 break
-for row in Matrix:
-    print(*row)
+
+for i in range(4):
+    for k in range(len(Matrix[0])):
+        print(Matrix[i][k],end='')
+
 
 
