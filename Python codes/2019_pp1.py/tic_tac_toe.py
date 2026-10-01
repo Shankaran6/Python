@@ -3,18 +3,7 @@
 #         ["_","_","_"],
 #         ["_","_","_"]
 #         ]
-# Player_code=["X","O"]
-# Players=["Player_1","Player_2"]
-# run=True
-# while run:
-#     for player in Player_code:
-#         if run==True:
-#             Play=int(input())
-#             position=(Play-1)%3
-#             row_num=(Play-1)//3
-#             Matrix[row_num][position]=player
-#             for row in Matrix:
-#                 print(*row)
+# 
 #             for k in range(2):
 #                 for i in range(3):
 #                     for j in range(3):
@@ -44,7 +33,18 @@
 #                     run=False
 
 #                 for i in range(3):
-#                     for j in range(3):
+#                     for j in range(3):Player_code=["X","O"]
+# Players=["Player_1","Player_2"]
+# run=True
+# while run:
+#     for player in Player_code:
+#         if run==True:
+#             Play=int(input())
+#             position=(Play-1)%3
+#             row_num=(Play-1)//3
+#             Matrix[row_num][position]=player
+#             for row in Matrix:
+#                 print(*row)
 #                         if Matrix[j][i]==Player_code[k]:
 #                             continue
 #                         else:
